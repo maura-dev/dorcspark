@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="en"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dorcspark</title>              
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">                   
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+	<nav>
+		<p><a>DORCSPARK</a></p>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#team">Team</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		
+	</nav>
+
+	<main>
+		<a id="home">
+		<section class="home">
+			<img src="./hero-img.png" width="50%" height="80%">
+			<div>
+				<h3>Developing beyond imaginations with better business solutions</h3>
+				<p>Give your website the additional spark with improved web based solutions provided by the Dorcspark team. </p><br>
+				<a href="#about"><button class="btn-1"><i class="fas fa-angle-double-right"></i>Learn more</button></a>
+				<button class="btn-2"><i class="fas fa-id-card"></i>Contact Us</button>
+			</div>
+			
+		</section>
+		</a>
+
+		<a id="about">
+		<section class="about">
+			<div>
+				<p>Dorcspark is a progressive digital company rising in Africa and has taken it as a responsibility to provide quality digital services around the world in person and remotely. With an amazing and effecient team, we provide web based solutions to clients who seek to expand their visibility through technology to all parts of the world with our standard services</p><br>
+				<a href="https://youtu.be/9_0w8SzQiMk" target="_blank"><button class="btn-1"><i class="far fa-play-circle"></i>Watch Video</button></a>
+			</div>
+			
+			<img src="./about.png" width="50%" height="90%">
+			
+		</section>
+		</a>
+
+		<a id="services">
+		<section class="services">
+			<p>The digital services we render include the following:</p>
+			<div class="services-item">
+				<img src="	./web (1).jpeg">
+				<p>Web design and development</p>
+			</div>
+
+			<div class="services-item">
+				<img src="	./web (4).jpeg">
+				<p>Graphic design</p>
+			</div>
+
+			<div class="services-item">
+				<img src="	./web (2).jpeg">
+				<p>Content creation</p>
+			</div>
+
+			<div class="services-item">
+				<img src="	./web (6).jpeg">
+				<p>Video editing</p>
+			</div>
+
+			<div class="services-item">
+				<img src="	./web (3).jpeg">
+				<p>SEO</p>
+			</div>
+
+			<div class="services-item">
+				<img src="	./web (5).jpeg">
+				<p>Brand advertising</p>
+			</div>
+			
+		</section>
+		</a>
+
+		<a id="team">
+		<section class="team">
+			<img src="./team.png" width="90%" height="90%">
+			<div>
+			<p>The dorcspark team is comprised of team of talented developers, designers, content creators, video editors, digital marketers and ICT professionals cutting across all genders working together to provide world class digital services. </p>
+			<a href="https://dorcspark.com.ng/code-of-ethics" target="_blank"><button class="btn-1"><i class="far fa-play-circle"></i>View code of ethics</button></a>
+			</div>
+		</section>
+		</a>
+
+		<a id="contact">
+		<section class="contact">
+			<div class="form-page">
+				<div class="img-content">
+					<img src="./contact.png" width="100%" height="90%">
+				</div>
+				<div class="mobile-img">
+					<img src="./bg-01.jpg">
+				</div>
+
+				<div class="form-content">
+					<h2>Let's work together</h2>
+
+					<p>We'll love to hear from you. Send us a message using the form application or email us by clicking <a href="mailto:digitals@dorcspark.com.ng?subject=Business request to Dorcspark">here</a>. Cheers!</p>
+
+					<form action="#" method="post">
+						<div class="field name" >
+							<input type="text" id="fullName" name ="fullName" value="" onchange="handleChange()">
+							<label>Full Name</label>
+							<sub id="error-name">Please enter your name</sub>
+						</div>
+
+						<div class="field name">
+							<input type="email" id="email" name="email" value="" onchange="handleChange()">
+							<label>Email</label>
+							<sub id="error-email">Please enter a valid email</sub>
+						</div>
+
+						<div class="field name">
+							<input type="tel" id="phone" name="phone" value="" onchange="handleChange()">
+							<label>Phone</label>
+							<sub id="error-phone">Please enter a phone number</sub>
+						</div>
+
+						<div class="field name" >
+							<input type="text" id="comp"  name="comp" value="" onchange="handleChange()">
+							<label>Company</label>
+							<sub id="error-comp">Please enter a company name</sub>
+						</div>	
+
+						<div class="help">
+							<p>How can we help you?</p>
+							<textarea type="text" id="help" maxlength="500" name="help" placeholder="Maximum number of characters allowed is 500" value="" onchange="handleChange()"></textarea>						
+							<sub id="error-help">Please fill this field</sub>
+						</div>
+
+						<div class="field">
+							<input type="text" id="referrer" name="referrer" value="" onchange="handleChange()">
+							<label>How did you hear about us?</label>
+							<sub id="error-referrer">Please fill this field</sub>
+						</div><br>
+
+						<button type="button" class="btn-1" onclick="handleSubmit()"><i class="far fa-paper-plane"></i>Send</button>
+
+					</form>
+				</div>
+			</div>
+		</section>
+		</a>
+		
+	</main>
+
+	<footer>
+		<div class="footer-row">
+			<div class="footer-box">
+				<h4><span>SOCIAL MEDIA LINKS</span></h4>
+					<ul>
+						<li><a href="https://www.facebook.com/dorcspark"><i class="fab fa-facebook"></i>Facebook</a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=+2347050454356"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+						<li><a href="https://www.linkedin.com/company/dorcspark"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+						<li><a href="https://twitter.com/DorcsparkMain/"><i class="fab fa-twitter"></i>Twitter</a></li>
+					</ul>
+			</div>
+			<div class="footer-box">
+				<h4><span>PRODUCTS AND SERVICES</span></h4>
+					<ul>
+						<li><a href="#">Explore Projects</a></li>
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">FAQs</a></li>
+
+					</ul>
+			</div>
+			<div class="footer-box">
+					<p><a>DORCSPARK</a></p>
+					<p><i class="fas fa-map-marker-alt"></i>Independence Lay-Out, Enugu Nigeria</p>
+					<p><i class="fas fa-phone-volume"></i>+2347050454356</p>
+					<p><i class="fas fa-envelope-open"></i>digitals@dorcspark.com.ng</p>
+			</div>
+
+
+		</div>		
+		<div class="footer-bar"><p>Dorcspark &copy; 2021, All Rights Reserved.</p></div>
+		
+	</footer>
+</body>
+</html>
