@@ -10,14 +10,15 @@
 </head>
 <body>
 
-	<nav>
+	<nav class="navbar">
 		<p><a>DORCSPARK</a></p>
 		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About Us</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#team">Team</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li class="item"><a href="#home">Home</a></li>
+			<li class="item"><a href="#about">About Us</a></li>
+			<li class="item"><a href="#services">Services</a></li>
+			<li class="item"><a href="#team">Team</a></li>
+			<li class="item"><a href="#contact">Contact</a></li>
+			<li class="toggle"><a><i class="fas fa-bars"></i></a></li>
 		</ul>
 		
 	</nav>
@@ -25,10 +26,10 @@
 	<main>
 		<a id="home">
 		<section class="home">
-			<img src="./hero-img.png" width="50%" height="80%">
+			<img src="./hero-img.png" width="100%" height="80%">
 			<div>
 				<h3>Developing beyond imaginations with better business solutions</h3>
-				<p>Give your website the additional spark with improved web based solutions provided by the Dorcspark team. </p><br>
+				<p>Give your business the additional spark with improved web based solutions provided by the Dorcspark team. </p><br>
 				<a href="#about"><button class="btn-1"><i class="fas fa-angle-double-right"></i>Learn more</button></a>
 				<button class="btn-2"><i class="fas fa-id-card"></i>Contact Us</button>
 			</div>
@@ -38,9 +39,11 @@
 
 		<a id="about">
 		<section class="about">
+
 			<div>
+				<h3>What you need <span style="	color: #fffffe;">to know about us</span></h3>
 				<p>Dorcspark is a progressive digital company rising in Africa and has taken it as a responsibility to provide quality digital services around the world in person and remotely. With an amazing and effecient team, we provide web based solutions to clients who seek to expand their visibility through technology to all parts of the world with our standard services</p><br>
-				<a href="https://youtu.be/9_0w8SzQiMk" target="_blank"><button class="btn-1"><i class="far fa-play-circle"></i>Watch Video</button></a>
+				&nbsp;<a href="https://youtu.be/9_0w8SzQiMk" target="_blank"><button class="btn-1"><i class="far fa-play-circle"></i>Watch Video</button></a>
 			</div>
 			
 			<img src="./about.png" width="50%" height="90%">
@@ -50,7 +53,7 @@
 
 		<a id="services">
 		<section class="services">
-			<p>The digital services we render include the following:</p>
+			<h3 style="	text-align: center;">Our  <span style="	color: #f2e9e4;">digital</span> services</h3>
 			<div class="services-item">
 				<img src="	./web (1).jpeg">
 				<p>Web design and development</p>
@@ -83,13 +86,15 @@
 			
 		</section>
 		</a>
+		<hr>	
 
 		<a id="team">
 		<section class="team">
+			<h3 style="	text-align: center;">The  <span style="	color: #f2e9e4;">Dorcspark </span> Team</h3><br>
 			<img src="./team.png" width="90%" height="90%">
 			<div>
 			<p>The dorcspark team is comprised of team of talented developers, designers, content creators, video editors, digital marketers and ICT professionals cutting across all genders working together to provide world class digital services. </p>
-			<a href="https://dorcspark.com.ng/code-of-ethics" target="_blank"><button class="btn-1"><i class="far fa-play-circle"></i>View code of ethics</button></a>
+			<a href="https://dorcspark.com.ng/code-of-ethics" target="_blank"><button class="btn-1">View code of ethics</button></a>
 			</div>
 		</section>
 		</a>
@@ -188,5 +193,30 @@
 		<div class="footer-bar"><p>Dorcspark &copy; 2021, All Rights Reserved.</p></div>
 		
 	</footer>
+
+	<script>
+		const toggle = document.querySelector(".toggle");
+		function toggleMenu() {
+
+			if(toggle.querySelector("a").innerHTML == "<i class=\"fas fa-bars\"></i>"){
+				toggle.querySelector("a").innerHTML = "<i class=\"fas fa-times\"></i>";
+				    const navitem=document.getElementsByClassName("item")
+				    for(i=0; i< navitem.length;i++){
+				    	navitem[i].style.display="block"
+				    }
+				}else{
+					toggle.querySelector("a").innerHTML = "<i class=\"fas fa-bars\"></i>";
+				    const navitem=document.getElementsByClassName("item")
+				    for(i=0; i< navitem.length;i++){
+				    	navitem[i].style.display="none"
+				    }
+				}
+
+		    
+		}
+		 
+		/** Event Listener **/
+		toggle.addEventListener("click", toggleMenu, false);
+	</script>
 </body>
 </html>
